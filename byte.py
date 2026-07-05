@@ -4,7 +4,7 @@ import os
 import copy
 print("\033c\033[47;31m\ngive me file  class: to run ? \n")
 a="Hello.class"
-#a=input().strip()
+a=input().strip()
 b=a.replace(".class","")
 if not jpype.isJVMStarted():
     jpype.startJVM(classpath=["."])
